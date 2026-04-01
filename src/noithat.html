@@ -1,329 +1,570 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DỊCH VỤ NỘI THẤT</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index-style.css" />
+    <link rel="stylesheet" href="../css/noithat.css" />
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DỊCH VỤ NỘI THẤT</title>
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../css/index-style.css">
-  <link rel="stylesheet" href="../css/noithat.css" />
-  <script src="../js/bootstrap.bundle.min.js" defer></script>
-</head>
-
-<body>
-  <div class="container-fluid p-0">
-    <header>
-      <div class="d-flex justify-content-center align-items-center py-3">
-        <img src="../img/logo.png" alt="logo" class="rounded-circle" />
-        <h1 id="banner">DỊCH VỤ SỬA CHỮA VÀ BẢO TRÌ TẠI NHÀ</h1>
-      </div>
-      <!-- navbar dùng chung -->
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="../index.html"><button type="button" class="btn btn-dark">
-                  Trang chủ
-                </button></a>
-            </li>
-            <li class="nav-item">
-              <a href="../index.html#gioithieu"><button type="button" class="btn btn-dark">
-                  Giới thiệu
-                </button></a>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">
-                  Nội thất
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#dogo">Đồ gỗ</a></li>
-                  <li><a class="dropdown-item" href="#phukien">Thay thế phụ kiện</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#son">Sơn & bọc lại hệ thống</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#baotri">Bảo trì hệ thống</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <div class="dropdown">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">
-                  Ngoại thất
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="ngoaithat.html">Dịch vụ ngoại thất</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">
-                  Điện lạnh
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link 1</a></li>
-                  <li><a class="dropdown-item" href="#">Link 2</a></li>
-                  <li><a class="dropdown-item" href="#">Link 3</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">
-                  Điện nước
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="diennuoc.html">Dịch vụ điện nước</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+  <body>
+    <div class="container-fluid p-0">
+      <header>
+        <div class="d-flex justify-content-center align-items-center py-3">
+          <img src="../img/logo.png" alt="logo" class="rounded-circle" />
+          <h1 id="banner">DỊCH VỤ SỬA CHỮA VÀ BẢO TRÌ TẠI NHÀ</h1>
         </div>
-      </nav>
-    </header>
+        <!-- navbar dùng chung -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="../index.html"
+                  ><button type="button" class="btn btn-dark">
+                    Trang chủ
+                  </button></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../index.html#gioithieu"
+                  ><button type="button" class="btn btn-dark">
+                    Giới thiệu
+                  </button></a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    Nội thất
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#dogo">Đồ gỗ</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#phukien"
+                        >Thay thế phụ kiện</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#son"
+                        >Sơn & bọc lại hệ thống</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#baotri"
+                        >Bảo trì hệ thống</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-    <main class="repair-container container mt-4">
-      <section class="visual-hero mb-5">
-        <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-white">
-          <h2 class="display-5 fw-bold">CHUYÊN NGHIỆP - TẬN TÂM</h2>
-          <p class="lead">Hồi sinh không gian sống bằng bàn tay nghệ nhân</p>
-        </div>
-      </section>
-
-      <section class="mb-5">
-        <h4 class="text-center fw-bold mb-4">DANH MỤC DỊCH VỤ TIÊU BIỂU</h4>
-        <div class="table-responsive shadow-sm">
-          <table class="table table-bordered align-middle text-center mb-0">
-            <thead class="table-dark">
-              <tr>
-                <th style="width: 30%">Loại dịch vụ</th>
-                <th>Đặc điểm thực hiện</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="fw-bold">Sửa chữa đồ gỗ</td>
-                <td>Xử lý biến dạng, gia cố kết cấu khung sườn.</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Thay thế phụ kiện</td>
-                <td>Lắp đặt bản lề, ray trượt, khóa cửa nhập khẩu.</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Làm mới & Sơn sửa</td>
-                <td>Sơn PU chuyên sâu, bọc lại da/nỉ cao cấp.</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Bảo trì định kỳ hệ thống</td>
-                <td>Liên tục bảo trì giúp nội thất bền hơn.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="services-detail-list">
-        <div class="row g-5">
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="img-wrapper mb-3">
-                <img src="../img/suadogo.jpg" alt="Sửa đồ gỗ" class="img-fluid rounded shadow" id="dogo" />
-              </div>
-              <h5 class="fw-bold border-start border-primary border-4 ps-2">
-                PHỤC HỒI & SỬA CHỮA ĐỒ GỖ
-              </h5>
-              <p class="text-muted">
-                Chúng tôi chuyên xử lý các loại nội thất gỗ tự nhiên và gỗ
-                công nghiệp bị xuống cấp. Đội ngũ thợ mộc sẽ tiến hành gia cố
-                lại kết cấu, xử lý các vết nứt, cong vênh do thời tiết và kỹ
-                thuật diệt mối mọt tận gốc. Mỗi món đồ sau khi sửa chữa không
-                chỉ lấy lại vẻ đẹp ban đầu mà còn đảm bảo độ bền chắc lâu dài
-                cho gia đình bạn.
-              </p>
-            </div>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    Ngoại thất
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="ngoaithat.html"
+                        >Dịch vụ ngoại thất</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    Điện lạnh
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="../src/dienlanh.html"
+                        >Điện lạnh</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    Điện nước
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="diennuoc.html"
+                        >Dịch vụ điện nước</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item ms-lg-2">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                >
+                  Đăng ký dịch vụ
+                </button>
+              </li>
+            </ul>
           </div>
+        </nav>
+      </header>
 
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="img-wrapper mb-3">
-                <img src="../img/phukien.jpg" alt="Phụ kiện" class="img-fluid rounded shadow" id="phukien" />
-              </div>
-              <h5 class="fw-bold border-start border-primary border-4 ps-2">
-                THAY THẾ PHỤ KIỆN CAO CẤP
-              </h5>
-              <p class="text-muted">
-                Thay thế hệ thống phụ kiện thông minh như: bản lề giảm chấn,
-                ray trượt 3 tầng, ổ khóa đa năng và tay nắm hiện đại. Chúng
-                tôi cam kết sử dụng linh kiện từ các thương hiệu uy tín, đảm
-                bảo vận hành êm ái, không gây tiếng động và có tuổi thọ cao,
-                giúp việc sử dụng tủ bếp, ngăn kéo trở nên nhẹ nhàng hơn.
-              </p>
-            </div>
+      <main class="repair-container container mt-4">
+        <section class="visual-hero mb-5">
+          <div
+            class="hero-overlay d-flex flex-column justify-content-center align-items-center text-white"
+          >
+            <h2 class="display-5 fw-bold">CHUYÊN NGHIỆP - TẬN TÂM</h2>
+            <p class="lead">Hồi sinh không gian sống bằng bàn tay nghệ nhân</p>
           </div>
+        </section>
 
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="img-wrapper mb-3">
-                <img src="../img/sonnoithat.jpg" alt="Sơn nội thất" class="img-fluid rounded shadow" id="son" />
-              </div>
-              <h5 class="fw-bold border-start border-primary border-4 ps-2">
-                SƠN PU & BỌC LẠI NỘI THẤT
-              </h5>
-              <p class="text-muted">
-                Áp dụng quy trình sơn PU 5 lớp chuyên nghiệp hoặc đánh bóng
-                vecni thủ công cho các loại bàn ghế cổ. Đối với sofa, chúng
-                tôi sử dụng các dòng da công nghiệp và nỉ nhập khẩu để bọc
-                lại, mang đến cảm giác êm ái và sang trọng. Quy trình xử lý
-                không mùi, an toàn cho sức khỏe và thực hiện nhanh gọn ngay
-                tại chỗ.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="img-wrapper mb-3">
-                <img src="../img/suasofa.jpg" alt="Bảo trì" class="img-fluid rounded shadow" id="baotri" />
-              </div>
-              <h5 class="fw-bold border-start border-primary border-4 ps-2">
-                BẢO TRÌ ĐỊNH KỲ HỆ THỐNG
-              </h5>
-              <p class="text-muted">
-                Gói bảo trì định kỳ giúp bạn kiểm soát toàn bộ tình trạng nội
-                thất. Chúng tôi sẽ kiểm tra độ khít của các cánh cửa, gia cố
-                các mối nối lỏng lẻo và tra dầu mỡ cho các thiết bị cơ khí.
-                Việc bảo trì thường xuyên không chỉ ngăn chặn hư hỏng lớn tốn
-                kém mà còn đảm bảo an toàn tuyệt đối, đặc biệt là gia đình có
-                trẻ nhỏ.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- footer -->
-    <footer>
-      <div class="container" id="end1">
-        <div class="row">
-          <div class="col-7">
-            <h4>Liên hệ</h4>
-            <h6>CÔNG TY TNHH SỬA CHỮA NHÀ XANH</h6>
-            <table>
-              <tr>
-                <td>
-                  <span>Điện thoại: </span>
-                  <a href="tel:0909456789" class="lienhe"> 0909 456 789</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Địa chỉ: </span> 12 Nguyễn Văn Bảo, phường Hạnh Thông,
-                  quận Gò Vấp
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Website: </span>
-                  <a href="#" class="lienhe">suachuatainha.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Email: </span>
-                  <a href="mailto:suachuanhaxanh@gmail.com?subject=Yêu cầu hỗ trợ dịch vụ"
-                    class="lienhe">suachuanhaxanh@gmail.com</a>
-                </td>
-              </tr>
+        <section class="mb-5">
+          <h4 class="text-center fw-bold mb-4">DANH MỤC DỊCH VỤ TIÊU BIỂU</h4>
+          <div class="table-responsive shadow-sm">
+            <table class="table table-bordered align-middle text-center mb-0">
+              <thead class="table-dark">
+                <tr>
+                  <th style="width: 30%">Loại dịch vụ</th>
+                  <th>Đặc điểm thực hiện</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-bold">Sửa chữa đồ gỗ</td>
+                  <td>Xử lý biến dạng, gia cố kết cấu khung sườn.</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Thay thế phụ kiện</td>
+                  <td>Lắp đặt bản lề, ray trượt, khóa cửa nhập khẩu.</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Làm mới & Sơn sửa</td>
+                  <td>Sơn PU chuyên sâu, bọc lại da/nỉ cao cấp.</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Bảo trì định kỳ hệ thống</td>
+                  <td>Liên tục bảo trì giúp nội thất bền hơn.</td>
+                </tr>
+              </tbody>
             </table>
           </div>
+        </section>
 
-          <div class="col">
-            <h4>Danh mục</h4>
-            <table>
-              <tr>
-                <td><a href="../index.html" class="lienhe">Trang chủ</a></td>
-              </tr>
-              <tr>
-                <td><a href="#banner" class="lienhe">Dịch vụ</a></td>
-              </tr>
-              <!-- chính sách bảo mật -->
-              <tr>
-                <td>
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" class="lienhe">
-                    Chính sách bảo mật
-                  </a>
-                </td>
-              </tr>
-              <!-- modal bảo mật -->
-              <div class="modal fade" id="privacyModal" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Chính sách bảo mật</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <!-- phần có thanh cuộn -->
-                    <div class="modal-body" style="max-height: 400px; overflow-y: auto">
-                      <p>
-                        Chúng tôi tôn trọng và cam kết bảo mật thông tin cá
-                        nhân của người dùng khi truy cập website này.
-                      </p>
-                      <p>
-                        Các thông tin như họ tên, số điện thoại, email (nếu
-                        được cung cấp) chỉ được sử dụng cho mục đích liên hệ,
-                        hỗ trợ và phục vụ cho hoạt động của website trong phạm
-                        vi thực hiện dịch vụ.
-                      </p>
-                      <p>
-                        Chúng tôi không chia sẻ, mua bán hoặc sử dụng thông
-                        tin cá nhân vào mục đích thương mại.
-                      </p>
-                      <p>
-                        Dữ liệu được lưu trữ trong thời gian cần thiết để vận
-                        hành website và sẽ được bảo vệ bằng các biện pháp phù
-                        hợp.
-                      </p>
-                      <p>
-                        Người dùng có quyền yêu cầu chỉnh sửa hoặc không cung
-                        cấp thông tin bất cứ lúc nào.
-                      </p>
-                      <p>
-                        Website này được xây dựng phục vụ mục đích học tập,
-                        không thu thập thông tin ngoài phạm vi cần thiết.
-                        Chúng tôi luôn cố gắng đảm bảo nội dung và chức năng
-                        của website hoạt động an toàn, minh bạch và không gây
-                        ảnh hưởng đến quyền riêng tư của người sử dụng.<br />
-                        Mọi thông tin được cung cấp là hoàn toàn tự nguyện và
-                        chỉ phục vụ cho việc trình bày, minh họa chức năng
-                        trong khuôn khổ đồ án học tập.
-                      </p>
-                    </div>
+        <section class="services-detail-list">
+          <div class="row g-5">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="img-wrapper mb-3">
+                  <img
+                    src="../img/suadogo.jpg"
+                    alt="Sửa đồ gỗ"
+                    class="img-fluid rounded shadow"
+                    id="dogo"
+                  />
+                </div>
+                <h5 class="fw-bold border-start border-primary border-4 ps-2">
+                  PHỤC HỒI & SỬA CHỮA ĐỒ GỖ
+                </h5>
+                <p class="text-muted">
+                  Chúng tôi chuyên xử lý các loại nội thất gỗ tự nhiên và gỗ
+                  công nghiệp bị xuống cấp. Đội ngũ thợ mộc sẽ tiến hành gia cố
+                  lại kết cấu, xử lý các vết nứt, cong vênh do thời tiết và kỹ
+                  thuật diệt mối mọt tận gốc. Mỗi món đồ sau khi sửa chữa không
+                  chỉ lấy lại vẻ đẹp ban đầu mà còn đảm bảo độ bền chắc lâu dài
+                  cho gia đình bạn.
+                </p>
+              </div>
+            </div>
 
-                    <div class="modal-footer">
-                      <button class="btn btn-secondary" data-bs-dismiss="modal">
-                        Đóng
-                      </button>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="img-wrapper mb-3">
+                  <img
+                    src="../img/phukien.jpg"
+                    alt="Phụ kiện"
+                    class="img-fluid rounded shadow"
+                    id="phukien"
+                  />
+                </div>
+                <h5 class="fw-bold border-start border-primary border-4 ps-2">
+                  THAY THẾ PHỤ KIỆN CAO CẤP
+                </h5>
+                <p class="text-muted">
+                  Thay thế hệ thống phụ kiện thông minh như: bản lề giảm chấn,
+                  ray trượt 3 tầng, ổ khóa đa năng và tay nắm hiện đại. Chúng
+                  tôi cam kết sử dụng linh kiện từ các thương hiệu uy tín, đảm
+                  bảo vận hành êm ái, không gây tiếng động và có tuổi thọ cao,
+                  giúp việc sử dụng tủ bếp, ngăn kéo trở nên nhẹ nhàng hơn.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="img-wrapper mb-3">
+                  <img
+                    src="../img/sonnoithat.jpg"
+                    alt="Sơn nội thất"
+                    class="img-fluid rounded shadow"
+                    id="son"
+                  />
+                </div>
+                <h5 class="fw-bold border-start border-primary border-4 ps-2">
+                  SƠN PU & BỌC LẠI NỘI THẤT
+                </h5>
+                <p class="text-muted">
+                  Áp dụng quy trình sơn PU 5 lớp chuyên nghiệp hoặc đánh bóng
+                  vecni thủ công cho các loại bàn ghế cổ. Đối với sofa, chúng
+                  tôi sử dụng các dòng da công nghiệp và nỉ nhập khẩu để bọc
+                  lại, mang đến cảm giác êm ái và sang trọng. Quy trình xử lý
+                  không mùi, an toàn cho sức khỏe và thực hiện nhanh gọn ngay
+                  tại chỗ.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="img-wrapper mb-3">
+                  <img
+                    src="../img/suasofa.jpg"
+                    alt="Bảo trì"
+                    class="img-fluid rounded shadow"
+                    id="baotri"
+                  />
+                </div>
+                <h5 class="fw-bold border-start border-primary border-4 ps-2">
+                  BẢO TRÌ ĐỊNH KỲ HỆ THỐNG
+                </h5>
+                <p class="text-muted">
+                  Gói bảo trì định kỳ giúp bạn kiểm soát toàn bộ tình trạng nội
+                  thất. Chúng tôi sẽ kiểm tra độ khít của các cánh cửa, gia cố
+                  các mối nối lỏng lẻo và tra dầu mỡ cho các thiết bị cơ khí.
+                  Việc bảo trì thường xuyên không chỉ ngăn chặn hư hỏng lớn tốn
+                  kém mà còn đảm bảo an toàn tuyệt đối, đặc biệt là gia đình có
+                  trẻ nhỏ.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="container" id="end1">
+          <div class="row">
+            <div class="col-7">
+              <h4>Liên hệ</h4>
+              <h6>CÔNG TY TNHH SỬA CHỮA NHÀ XANH</h6>
+              <table>
+                <tr>
+                  <td>
+                    <span>Điện thoại: </span>
+                    <a href="tel:0909456789" class="lienhe"> 0909 456 789</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Địa chỉ: </span> 12 Nguyễn Văn Bảo, phường Hạnh Thông,
+                    quận Gò Vấp
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Website: </span>
+                    <a href="#" class="lienhe">suachuatainha.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Email: </span>
+                    <a
+                      href="mailto:suachuanhaxanh@gmail.com?subject=Yêu cầu hỗ trợ dịch vụ"
+                      class="lienhe"
+                      >suachuanhaxanh@gmail.com</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="col">
+              <h4>Danh mục</h4>
+              <table>
+                <tr>
+                  <td><a href="../index.html" class="lienhe">Trang chủ</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#banner" class="lienhe">Dịch vụ</a></td>
+                </tr>
+                <!-- chính sách bảo mật -->
+                <tr>
+                  <td>
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#privacyModal"
+                      class="lienhe"
+                    >
+                      Chính sách bảo mật
+                    </a>
+                  </td>
+                </tr>
+                <!-- modal bảo mật -->
+                <div class="modal fade" id="privacyModal" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Chính sách bảo mật</h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+                      <!-- phần có thanh cuộn -->
+                      <div
+                        class="modal-body"
+                        style="max-height: 400px; overflow-y: auto"
+                      >
+                        <p>
+                          Chúng tôi tôn trọng và cam kết bảo mật thông tin cá
+                          nhân của người dùng khi truy cập website này.
+                        </p>
+                        <p>
+                          Các thông tin như họ tên, số điện thoại, email (nếu
+                          được cung cấp) chỉ được sử dụng cho mục đích liên hệ,
+                          hỗ trợ và phục vụ cho hoạt động của website trong phạm
+                          vi thực hiện dịch vụ.
+                        </p>
+                        <p>
+                          Chúng tôi không chia sẻ, mua bán hoặc sử dụng thông
+                          tin cá nhân vào mục đích thương mại.
+                        </p>
+                        <p>
+                          Dữ liệu được lưu trữ trong thời gian cần thiết để vận
+                          hành website và sẽ được bảo vệ bằng các biện pháp phù
+                          hợp.
+                        </p>
+                        <p>
+                          Người dùng có quyền yêu cầu chỉnh sửa hoặc không cung
+                          cấp thông tin bất cứ lúc nào.
+                        </p>
+                        <p>
+                          Website này được xây dựng phục vụ mục đích học tập,
+                          không thu thập thông tin ngoài phạm vi cần thiết.
+                          Chúng tôi luôn cố gắng đảm bảo nội dung và chức năng
+                          của website hoạt động an toàn, minh bạch và không gây
+                          ảnh hưởng đến quyền riêng tư của người sử dụng.<br />
+                          Mọi thông tin được cung cấp là hoàn toàn tự nguyện và
+                          chỉ phục vụ cho việc trình bày, minh họa chức năng
+                          trong khuôn khổ đồ án học tập.
+                        </p>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Đóng
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid text-center" id="end2">
+          <address class="h5">
+            <i>&copy; 2026 Nhóm 5-WEB. All rights reserved.</i>
+          </address>
+        </div>
+      </footer>
+    </div>
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title" id="registerModalLabel">
+              ĐĂNG KÝ DỊCH VỤ NHANH
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registrationForm">
+              <div class="mb-3">
+                <label for="fullName" class="form-label"
+                  >Full Name (Họ tên)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Nhập tên của bạn..."
+                  required
+                />
               </div>
-              <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
-            </table>
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label"
+                  >Phone Number (Số điện thoại)</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="090x xxx xxx"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="serviceType" class="form-label"
+                  >Service (Loại dịch vụ)</label
+                >
+                <select class="form-select" id="serviceType">
+                  <option selected>Chọn dịch vụ...</option>
+                  <option value="noithat">Nội thất</option>
+                  <option value="ngoaithat">Ngoại thất</option>
+                  <option value="dienlanh">Điện lạnh</option>
+                  <option value="diennuoc">Điện nước</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="note" class="form-label">Note (Ghi chú thêm)</label>
+                <textarea
+                  class="form-control"
+                  id="note"
+                  rows="3"
+                  placeholder="Mô tả tình trạng hư hỏng..."
+                ></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-dark">
+                  Send Request (Gửi yêu cầu)
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <div class="container-fluid text-center" id="end2">
-        <address class="h5">
-          <i>&copy; 2026 Nhóm 5-WEB. All rights reserved.</i>
-        </address>
+    </div>
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title" id="registerModalLabel">
+              ĐĂNG KÝ DỊCH VỤ NHANH
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registrationForm">
+              <div class="mb-3">
+                <label for="fullName" class="form-label"
+                  >Full Name (Họ tên)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Nhập tên của bạn..."
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label"
+                  >Phone Number (Số điện thoại)</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="090x xxx xxx"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="serviceType" class="form-label"
+                  >Service (Loại dịch vụ)</label
+                >
+                <select class="form-select" id="serviceType">
+                  <option selected>Chọn dịch vụ...</option>
+                  <option value="noithat">Nội thất</option>
+                  <option value="ngoaithat">Ngoại thất</option>
+                  <option value="dienlanh">Điện lạnh</option>
+                  <option value="diennuoc">Điện nước</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="note" class="form-label">Note (Ghi chú thêm)</label>
+                <textarea
+                  class="form-control"
+                  id="note"
+                  rows="3"
+                  placeholder="Mô tả tình trạng hư hỏng..."
+                ></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-dark">
+                  Send Request (Gửi yêu cầu)
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </footer>
-  </div>
-</body>
-
+    </div>
+  </body>
 </html>
