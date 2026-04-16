@@ -104,3 +104,29 @@ footer {
     margin-top: 30px;
     padding-bottom: 10px;
 }
+
+.floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    overflow: hidden;
+    /* Đảm bảo hình không tràn khỏi vòng tròn */
+}
+
+.contact-img {
+    width: 60%;
+    /* Bạn có thể tăng giảm % này để hình to/nhỏ tùy ý */
+    height: 60%;
+    border-radius: 99%;
+    object-fit: contain;
+    /* Giữ nguyên tỉ lệ hình ảnh */
+}

@@ -90,26 +90,69 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="phoneNumber" class="form-label">Phone Number (Số điện thoại)</label>
-                                    <input type="tel" class="form-control" id="phoneNumber" placeholder="090x xxx xxx"
+                                    <input type="tel" class="form-control" id="phoneNumber" placeholder="0xxx xxx xxx"
                                         required />
                                 </div>
+
                                 <div class="mb-3">
-                                    <label for="serviceType" class="form-label">Service (Loại dịch vụ)</label>
-                                    <select class="form-select" id="serviceType" required>
-                                        <option selected disabled>Chọn dịch vụ...</option>
-                                        <option value="noithat">Nội thất</option>
-                                        <option value="ngoaithat">Ngoại thất</option>
-                                        <option value="dienlanh">Điện lạnh</option>
-                                        <option value="diennuoc">Điện nước</option>
-                                    </select>
+                                    <label for="serviceType" class="form-label">
+                                        Service (Loại dịch vụ)
+                                    </label>
+                                    <div>
+                                        <div class="row">
+                                            <div class="form-check ms-3 col-5">
+                                                <input class="form-check-input" type="checkbox" value="" id="nt" />
+                                                <label class="form-check-label" for="nt"> Nội thất </label>
+                                            </div>
+                                            <div class="form-check ms-3 col-5">
+                                                <input class="form-check-input" type="checkbox" value="" id="dl" />
+                                                <label class="form-check-label" for="dl"> Điện lạnh </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-check ms-3 col-5">
+                                                <input class="form-check-input" type="checkbox" value="" id="ngt" />
+                                                <label class="form-check-label" for="ngt"> Ngoại thất </label>
+                                            </div>
+
+                                            <div class="form-check ms-3 col-5">
+                                                <input class="form-check-input" type="checkbox" value="" id="dn" />
+                                                <label class="form-check-label" for="dn"> Điện nước </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 mt-3">
+                                            <label for="soNha" class="form-label">Số nhà,tên đường</label>
+                                            <input type="text" class="form-control" id="soNha"
+                                                placeholder="Nhập số nhà..." />
+                                        </div>
+                                        <div class="row">
+                                            <div class="mb-3 col-6">
+                                                <label for="phuongXa" class="form-label">Phường/Xã</label>
+                                                <input type="text" class="form-control" id="phuongXa"
+                                                    placeholder="Nhập phường..." />
+                                            </div>
+                                            <div class="mb-3 col-6">
+                                                <label for="quanHuyen" class="form-label">Quận/Huyện</label>
+                                                <input type="text" class="form-control" id="quanHuyen"
+                                                    placeholder="Nhập quận..." />
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="thanhPho" class="form-label">Thành phố/Tỉnh</label>
+                                            <input type="text" class="form-control" id="thanhPho"
+                                                placeholder="Nhập Tỉnh,Thành Phố" />
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <div class="mb-3">
                                     <label for="note" class="form-label">Note (Ghi chú thêm)</label>
                                     <textarea class="form-control" id="note" rows="3"
                                         placeholder="Mô tả tình trạng hư hỏng..."></textarea>
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-dark">
+                                    <button type="button" class="btn btn-dark" onclick="kiemTraForm(event)">
                                         Send Request (Gửi yêu cầu)
                                     </button>
                                 </div>
@@ -238,7 +281,9 @@
                 </div>
             </section>
         </main>
-
+        <a href="tel:0909456789" class="floating-btn" title="Liên hệ ngay">
+            <img src="img/contacticon.png" alt="Contact" class="contact-img" />
+        </a>
     </div>
     <!-- footer -->
     <footer>
@@ -357,6 +402,7 @@
             </address>
         </div>
     </footer>
+    <script src="js/kiemtra.js"></script>
 </body>
 
 </html>
