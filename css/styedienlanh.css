@@ -34,7 +34,7 @@
   height: 34vh;
   background:
     linear-gradient(rgba(205, 180, 180, 0.4)),
-    url("../IMG/tho-dien-lanh-goitho.jpg") center/cover no-repeat;
+    url("../img/tho-dien-lanh-goitho.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
